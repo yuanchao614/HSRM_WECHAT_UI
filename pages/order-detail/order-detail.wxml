@@ -1,0 +1,19 @@
+<view class="order-detail" style="height:{{winHeight}}px">
+<view class="body">
+<view class="detail-text">发车时间：{{fromOrderTiketPageData.data.start_time}}</view>
+<view class="detail-text" wx:if="{{fromOrderTiketPageData.type == 1}}">票价：{{fromOrderTiketPageData.data.ticket_price1}}元</view>
+<view class="detail-text" wx:if="{{fromOrderTiketPageData.type == 2}}">票价：{{fromOrderTiketPageData.data.ticket_price3}}元</view>
+<view class="detail-text" wx:if="{{fromOrderTiketPageData.type == 3}}">票价：{{fromOrderTiketPageData.data.ticket_price2}}元</view>
+<view class="detail-text">动车号：{{fromOrderTiketPageData.data.hs_railId}}</view>
+<view class="detail-text">联系电话：{{mobinle}}</view>
+<view class="detail-text" wx:if="{{fromOrderTiketPageData.type == 1}}">座位类型：{{fromOrderTiketPageData.data.ticket_type1}}</view>
+<view class="detail-text" wx:if="{{fromOrderTiketPageData.type == 2}}">座位类型：{{fromOrderTiketPageData.data.ticket_type2}}</view>
+<view class="detail-text" wx:if="{{fromOrderTiketPageData.type == 3}}">座位类型：{{fromOrderTiketPageData.data.ticket_type3}}</view>
+<view class="detail-text">座位号：14A 12</view>
+</view>
+ <view class="enterprise-login">
+      <button class="box center" style="width:100%;" formType="submit">
+      <view class="text" bindtap="order">确定</view>      
+      </button>
+    </view>
+</view>

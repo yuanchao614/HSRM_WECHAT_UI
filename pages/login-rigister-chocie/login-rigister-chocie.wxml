@@ -1,0 +1,15 @@
+<view class="content" style="height:{{winHeight}}px">
+  <image class="back" src="../images/back.png" bindtap="backHome"></image>
+  <view class="login-container">
+    <view class="personal-login">
+    <view class="box center" bindtap="goLogin">
+      <view class="text">用户登录</view>    
+    </view>
+    </view>
+    <view class="enterprise-login">
+      <view class="box center">
+      <view class="text" bindtap="goRegister">用户注册</view>      
+      </view>
+    </view>
+  </view>
+</view>

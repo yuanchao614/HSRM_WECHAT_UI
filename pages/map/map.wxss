@@ -1,0 +1,18 @@
+#c{
+            margin: 0 auto;
+            display: block;
+        }
+        #r{
+            display: block;
+            margin: 0 auto;
+        }
+        #r::before{
+            color: black;
+            content: attr(min);
+            padding-right: 10px;
+        }
+        #r::after{
+            color: black;
+            content: attr(max);
+            padding-left: 10px;
+        }    

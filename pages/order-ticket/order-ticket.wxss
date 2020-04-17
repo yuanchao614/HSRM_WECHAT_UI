@@ -1,0 +1,62 @@
+/* pages/order-ticket/order-ticket.wxss */
+
+.order-ticket {
+  width: 100%;
+  background: linear-gradient(181deg, rgba(13, 204, 255, 1) 15%, rgba(71, 96, 255, 1) 100%);
+}
+
+.header {
+  height: 30%;
+  width: 100%;
+  display: flex;
+}
+
+.header-left {
+  width: 30%;
+  height: 100%;
+  color: #fff;
+}
+.header-center {
+  width: 40%;
+  height: 100%;
+}
+.header-right {
+  width: 30%;
+  height: 100%;
+  color: #fff;
+}
+.body {
+  height: 50%;
+  width: 100%;
+}
+
+.body-li {
+  height: 30%;
+  width: 100%;
+  display: flex;
+  color: #fff;
+}
+
+.body-li-box {
+  width: 25%;
+  height: 100%;
+}
+
+.btn {
+  width: 80%;
+  height: 80rpx;
+  border-radius: 40px;
+  background: rgba(95,147,237,1);
+}
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.align-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}

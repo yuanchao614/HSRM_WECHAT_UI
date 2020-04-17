@@ -1,0 +1,41 @@
+<view class="order-ticket" style="height:{{winHeight}}px">
+<view class="header">
+<view class="header-left align-center">
+<view>{{item.start_time}}</view>
+<view style="font-size: 30rpx;font-weight:bold;">{{item.start_station}}</view>
+</view>
+<view class="header-center center">
+<view style="font-size: 40rpx;font-weight:bold;color: #fff;border-bottom: 2px solid;">{{item.hs_railId}}</view>
+</view>
+<view class="header-right align-center">
+<view>{{item.end_time}}</view>
+<view style="font-size: 30rpx;font-weight:bold;">{{item.end_station}}</view>
+</view>
+</view>
+<view class="body">
+<view class="body-li">
+<view class="body-li-box center">{{item.ticket_type1}}</view>
+<view class="body-li-box center">￥{{item.ticket_price1}}</view>
+<view class="body-li-box center">余{{item.ticket_num1}}张</view>
+<view class="body-li-box center">
+<view class="btn center" bindtap="orderOne">订票</view>
+</view>
+</view>
+<view class="body-li">
+<view class="body-li-box center">{{item.ticket_type1}}</view>
+<view class="body-li-box center">￥{{item.ticket_price1}}</view>
+<view class="body-li-box center">余{{item.ticket_num1}}张</view>
+<view class="body-li-box center">
+<view class="btn center" bindtap="orderSec">订票</view>
+</view>
+</view>
+<view class="body-li">
+<view class="body-li-box center">{{item.ticket_type1}}</view>
+<view class="body-li-box center">￥{{item.ticket_price1}}</view>
+<view class="body-li-box center">余{{item.ticket_num1}}张</view>
+<view class="body-li-box center">
+<view class="btn center" bindtap="orderTheard">订票</view>
+</view>
+</view>
+</view>
+</view>

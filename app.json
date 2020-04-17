@@ -1,0 +1,27 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/tickets/tickets",
+    "pages/logs/logs",
+    "pages/map/map",
+    "pages/login-rigister-chocie/login-rigister-chocie",
+    "pages/login/login",
+    "pages/register/register",
+    "pages/order-ticket/order-ticket",
+    "pages/order-detail/order-detail",
+    "pages/my/my"
+  ],
+  "permission": {
+    "scope.userLocation": {
+      "desc": "你的位置信息将用于小程序位置接口的效果展示"
+    }
+  },
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "MiniProgram",
+    "navigationBarTextStyle": "black"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

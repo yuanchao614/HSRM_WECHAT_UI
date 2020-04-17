@@ -1,0 +1,26 @@
+<view class="tickets" style="height:{{winHeight}}px">
+  <view class="list-header"></view>
+  <view class="list-content">
+    <view wx:for="{{listOfData}}" style="width:100%;">
+    <view class="box" data-item="{{item}}" bindtap="orderTickets">
+    <view class="left-part">
+        {{item.start_time}}
+      </view>
+      <view class="center-part">
+        <view style="font-weight:bold;">{{item.hs_railId}}</view>
+        <view>{{item.start_station}} To {{item.end_station}}</view>
+      </view>
+      <view class="right-part">
+        {{item.end_time}}
+      </view>
+    </view>
+    </view>
+  </view>
+<view class="list-footer center">
+ <view class="enterprise-login">
+      <button class="box2 center" style="width:100%;" formType="submit">
+      <view class="text" bindtap="goMyPage">查看我的车票</view>      
+      </button>
+    </view>
+</view>
+</view>

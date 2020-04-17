@@ -1,0 +1,29 @@
+<view class="my-container" style="height:{{winHeight}}px">
+  <view class="header center">
+    我的订单
+  </view>
+  <view class="body">
+    <block wx:if="{{orderData.length}}">
+    <view class="box" wx:for="{{orderData}}">
+      <view class="title">
+        <view style="font-weight: bold;color: rgba(19,192,255);">{{item.startStation}}->{{item.endStation}}</view>
+        <view style="font-weight: bold;color: red;">￥{{item.price}}</view>
+      </view>
+      <view class="sub-title">
+        <view style="color: gray;">{{item.hs_railId}} | {{item.startTime}}出发</view>
+        <view style="border: 1px solid gray;border-radius: 40px;width: 100rpx;text-align: center;color: gray;">删除</view>
+      </view>
+    </view>
+    </block>
+    <view wx:if="{{!orderData.length}}" style="color:#fff;">
+    暂无订单...
+    </view>
+  </view>
+  <view class="footer center">
+    <view class="enterprise-login">
+      <button class="box2 center" style="width:100%;" formType="submit">
+        <view class="text" bindtap="backTicket">返回首页</view>
+      </button>
+    </view>
+  </view>
+</view>
