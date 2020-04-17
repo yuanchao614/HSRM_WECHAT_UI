@@ -11,7 +11,7 @@
       </view>
       <view class="sub-title">
         <view style="color: gray;">{{item.hs_railId}} | {{item.startTime}}出发</view>
-        <view style="border: 1px solid gray;border-radius: 40px;width: 100rpx;text-align: center;color: gray;">删除</view>
+        <view style="border: 1px solid gray;border-radius: 40px;width: 100rpx;text-align: center;color: gray;" data-id="{{item.id}}" bindtap="deleteOrder">删除</view>
       </view>
     </view>
     </block>
